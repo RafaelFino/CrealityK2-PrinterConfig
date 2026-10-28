@@ -45,10 +45,10 @@ Não deixe essa etapa para depois da instalação: a preparação prévia facili
 Para reproduzir a configuração documentada neste repositório, siga esta sequência:
 
 1. Consulte os arquivos disponíveis na pasta `DXC2/`.
-2. Imprima as peças de elevação da correia e da entrada dos tubos de alimentação.
+2. Imprima as peças de elevação da correia e da entrada dos tubos de alimentação. Prefira ABS, é uma peça que estará sujeita a altas temepraturas e forças mecânicas o tempo todo. PETG pode funcionar, PLA não é recomendado
 3. Prepare a base da extrusora, removendo o ímã indicado junto ao sensor Hall do *cutter*.
 4. Monte as peças de elevação na parte superior da extrusora.
-5. Instale a DXC2 na Creality K2, tomando cuidado com a fixação e o posicionamento do sensor de filamento.
+5. Instale a DXC2 na Creality K2, tomando cuidado com a fixação e o posicionamento do sensor de filamento. Uma leve lubrificação com óleo adequado pode ajudar no cutter.
 6. Aplique as configurações correspondentes aos arquivos disponibilizados neste repositório.
 7. Verifique o funcionamento do sensor de filamento, do mecanismo de *cutter* e da alimentação do filamento.
 8. Realize os testes e ajustes finais antes de utilizar a impressora normalmente.
