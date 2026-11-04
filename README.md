@@ -53,6 +53,22 @@ Para reproduzir a configuração documentada neste repositório, siga esta sequ�
 7. Verifique o funcionamento do sensor de filamento, do mecanismo de *cutter* e da alimentação do filamento.
 8. Realize os testes e ajustes finais antes de utilizar a impressora normalmente.
 
+## ⚠️ Sub-extrusão: problema resolvido (nov/2026)
+
+Durante a validação da DXC2 houve um problema grande de **sub-extrusão** (gaps e pinholes nas camadas de topo, pó de filamento na extrusora, déficit de extrusão crescente com a velocidade).
+
+**Causa real:** combinação de **tensão do idler da extrusora mal regulada** e **filamento inadequado** (não era um filamento premium de verdade).
+
+**Solução:** trocar para um **filamento premium**, **regular a tensão do idler** e repetir a calibração da extrusora até convergir. O valor final de `rotation_distance` é **`6.86`**. Com isso, a impressão ficou **perfeita**.
+
+Lições:
+
+- Antes de mexer em `rotation_distance`, temperatura, MVS ou flow ratio, elimine as causas básicas: **filamento e tensão do idler**.
+- Filamento ruim gera sintomas idênticos a defeito mecânico ou de calibração. Teste sempre com um filamento de referência.
+- Calibre a `rotation_distance` sempre a 1 mm/s (`G1 E100 F60`) e só com o conjunto sem patinagem.
+
+O passo a passo completo (diagnóstico, calibração de `rotation_distance`, teste escalonado, `pressure_advance` e flow ratio) está em [CALIBRACAO.md](CALIBRACAO.md).
+
 ## Configurações e responsabilidade
 
 Os arquivos deste repositório refletem uma configuração específica da Creality K2 com a extrusora DXC2 e as modificações mecânicas descritas acima.
